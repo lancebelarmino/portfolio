@@ -1,0 +1,53 @@
+@use 'scss/styles' as *;
+
+.section {
+  position: relative;
+  margin-bottom: 12.5rem;
+  will-change: transform;
+}
+
+.wrapper {
+  text-align: center;
+}
+
+.header {
+  margin-bottom: 7.5rem;
+}
+
+.portrait {
+  margin-bottom: 1.75rem;
+}
+
+.text {
+  @include font-size(t-l);
+  margin: 0 auto 1.75rem auto;
+  max-width: 680px;
+}
+
+.techStackList {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 3.75rem;
+  max-width: 840px;
+  margin: 0 auto;
+
+  @include breakpoint-up(tablet) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.techStackItem {
+  list-style: none;
+}
+
+.gradient {
+  z-index: -1;
+  position: absolute;
+  top: 260px;
+  left: -480px;
+
+  @include breakpoint-up(desktop) {
+    top: 0;
+    left: -580px;
+  }
+}

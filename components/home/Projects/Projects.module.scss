@@ -1,0 +1,101 @@
+@use 'scss/styles' as *;
+
+.section {
+  position: relative;
+  will-change: transform;
+}
+
+.wrapper {
+  @include breakpoint-up(tablet) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2.5rem;
+  }
+
+  @include breakpoint-up(desktop) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 6.25rem;
+  }
+}
+
+.project {
+  margin-bottom: 5rem;
+
+  @include breakpoint-up(tablet) {
+    margin-bottom: 10rem;
+  }
+}
+
+.rightColProject:nth-child(1) {
+  margin-top: 5rem;
+
+  @include breakpoint-up(tablet) {
+    margin-top: 10rem;
+  }
+}
+
+.projectImgLink {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 1.75rem;
+  border-radius: 16px;
+}
+
+.projectImg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: all 400ms ease;
+
+  &:hover {
+    transform: scale(1.06);
+  }
+}
+
+.infoHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.infoLinks {
+  display: flex;
+  gap: 1rem;
+}
+
+.infoLink {
+  & path {
+    transition: transition(icon);
+  }
+
+  &:hover path {
+    fill: color(neutral, 1);
+  }
+}
+
+.techStack {
+  display: flex;
+  gap: 1rem;
+}
+
+.techStackItem {
+  list-style: none;
+  color: color(neutral, 2);
+  font-weight: font-weight(medium);
+}
+
+.gradient {
+  z-index: -1;
+  position: absolute;
+  top: 200px;
+  left: -100px;
+
+  @include breakpoint-up(tablet) {
+    top: 400px;
+    left: 800px;
+  }
+}

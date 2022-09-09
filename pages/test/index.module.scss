@@ -1,0 +1,20 @@
+@use '../../scss/styles' as *;
+
+.box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  padding: 40px;
+  background: white;
+  box-shadow: box-shadow(card, hover);
+}
+
+.test {
+  color: color(primary, 1);
+
+  @include breakpoint-up(desktop) {
+    color: red;
+  }
+}

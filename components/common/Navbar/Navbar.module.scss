@@ -1,0 +1,83 @@
+@use 'scss/styles' as *;
+
+.navbar {
+  position: relative;
+  z-index: 9999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 32px;
+  padding: 1.5rem 1.5rem 0 1.5rem;
+  will-change: transform;
+
+  @include breakpoint-up(desktop) {
+    padding: 1.5rem 0 0 0;
+  }
+}
+
+.mobileMenu {
+  z-index: 9999;
+  position: absolute;
+  left: 24px;
+  top: 24px;
+  right: 24px;
+  padding: 2rem;
+  background-color: color(neutral, 3);
+  border-radius: 8px;
+  box-shadow: box-shadow(menu, default);
+}
+
+.mobileMenuCloseBtn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+
+  & path {
+    fill: color(neutral, 2);
+    transition: transition(button);
+  }
+
+  &:hover path {
+    fill: color(neutral, 1);
+  }
+}
+
+.mobileMenuList {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 1.75rem;
+}
+
+.mobileMenuExternalLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+
+  & path {
+    transition: transition(button);
+  }
+
+  &:hover path {
+    fill: color(neutral, 2);
+  }
+}
+
+.desktopMenuList {
+  display: flex;
+  gap: 2.5rem;
+}
+
+// COMMON
+// ------------------------------
+//
+.menuLink {
+  color: color(neutral, 1);
+
+  &:hover {
+    color: color(neutral, 2);
+  }
+}
+
+.menuItem {
+  list-style: none;
+}

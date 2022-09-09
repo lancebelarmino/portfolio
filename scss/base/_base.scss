@@ -1,0 +1,43 @@
+@use './index' as *;
+
+/*
+  =============================
+  BASE
+  =============================
+*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p,
+hr {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  transition: transition(button);
+
+  &:hover {
+    color: color(neutral, 1);
+  }
+}
+
+hr {
+  height: 1px;
+  background-color: color(neutral, 5);
+  border: none;
+}

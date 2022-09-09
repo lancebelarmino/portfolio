@@ -1,0 +1,9 @@
+@use 'scss/styles' as *;
+
+.section {
+  padding: 0 1.5rem;
+
+  @include breakpoint-up(desktop) {
+    padding: 0;
+  }
+}

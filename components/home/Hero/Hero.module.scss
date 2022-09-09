@@ -1,0 +1,36 @@
+@use 'scss/styles' as *;
+
+.section {
+  position: relative;
+  height: calc(100vh - 52px);
+  will-change: transform;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  height: 80vh;
+}
+
+.title {
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  margin-bottom: 3.75rem;
+  color: color(neutral, 2);
+  font-weight: font-weight(regular);
+}
+
+.gradient {
+  z-index: -1;
+  position: absolute;
+
+  top: -240px;
+  left: 0;
+
+  @include breakpoint-up(desktop) {
+    top: -240px;
+    left: 400px;
+  }
+}
