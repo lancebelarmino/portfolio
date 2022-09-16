@@ -30,8 +30,8 @@ const About = () => {
             />
           </picture>
           <motion.p className={styles.text} initial="hidden" whileInView="visible" variants={fadeUpVariant} viewport={{ once: true }} custom={2}>
-            Lance is a web designer turned front-end developer specializing in building apps and websites using React. Currently a freelancer and is working with several crypto projects and on an app
-            called Calometer.
+            Lance is a web designer turned front-end developer who specializes in building apps and websites with tools like React. For the past two years, he has used his skills and passion to create
+            amazing websites and experiences for his client. He has worked with local and international businesses, as well as several cryptocurrencies, to develop dashboard applications and websites.
           </motion.p>
           <motion.div initial="hidden" whileInView="visible" variants={fadeUpVariant} viewport={{ once: true }} custom={3}>
             <Button>Download Resume</Button>

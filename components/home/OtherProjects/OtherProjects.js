@@ -50,8 +50,6 @@ const OtherProjects = () => {
     </li>
   ));
 
-  console.log(isHoveredItem);
-
   return (
     <Section className={styles.section}>
       <div className={styles.header}>
