@@ -14,11 +14,6 @@ const Hero = () => {
           <motion.h3 className={styles.subtitle} variants={fadeUpVariant} viewport={{ once: true }} custom={5}>
             Front-end Developer
           </motion.h3>
-          // <motion.div variants={fadeUpVariant} viewport={{ once: true }} custom={6}>
-          //   <Button className={styles.btn} component="a">
-          //     View Projects
-          //   </Button>
-          // </motion.div>
         </motion.div>
         <div>
           <picture className={styles.gradient}>
